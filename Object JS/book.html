@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project</title>
+    <link rel="stylesheet" href="book.css" />
+    <h1>Library Project</h1>
+  </head>
+  <body>
+  </br></br>
+    <div class="fundo">
+        <div class = "fundoModal">
+      <a class="novoLivroModal" href="#abrirModal">New Book +</a>
+    </div>
+      <div id="abrirModal" class="modal">
+        <div class="card">
+          <div class="container">
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <form>
+            <h2>New Book</h2>
+            
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author"><br><br>
+            <label for="booktitle">Title:</label>
+            <input type="text" id="booktitle" name="booktitle"><br><br>
+            <label for="pages">Pages:</label>
+            <input type="text" id="pages" name="pages"><br><br>
+            <label for="group1">Read? </label>
+            <fieldset id="group1">
+                <input type="radio" value="Yes" name="group1">Yes</br>
+                <input type="radio" value="No" name="group1">No</br>
+              </fieldset>
+            <button
+              class="novoLivro"
+              type="button"
+              onclick="addBookToLibrary()"
+            >
+              Add Book
+            </button>
+        </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="book.js"></script>
+</html>
